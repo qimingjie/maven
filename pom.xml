@@ -17,8 +17,23 @@
   </dependencies>
   <build>
     <finalName>maven</finalName>
-  </build>
 
+    <plugins>
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <configuration>
+          <url>
+            http://localhost:8080/
+          </url>
+          <path>/</path>
+          <username>tomcat</username>
+          <password>123456</password>
+        </configuration>
+      </plugin>
+    </plugins>
+
+  </build>
 
 
 </project>
