@@ -24,7 +24,7 @@
         <artifactId>tomcat7-maven-plugin</artifactId>
         <configuration>
           <url>
-            http://localhost:8080/
+            http://localhost:8080/manager/text
           </url>
           <path>/</path>
           <username>tomcat</username>
